@@ -143,7 +143,7 @@ if (isset($_GET['delete'])) {
 <script>
 function generatePass(target) {
     fetch("https://api.api-ninjas.com/v1/passwordgenerator?length=16", {
-        headers: {"X-Api-Key": "0+F5FmPfTXO/0N7suW3idg==guo5VoVbIXNv2K2E"}
+        headers: {"X-Api-Key": ""}
     })
     .then(res => res.json())
     .then(data => document.getElementById(target).value = data.random_password)
